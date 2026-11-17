@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+        <meta name="viewport" content="width=device-width"> <!-- Configuración de la ventana gráfica para dispositivos móviles -->
+
+        <title>Portafolio de Jensy Morales @Yedom</title> <!-- Título de la página -->
+
+        <meta name="robots" content="index, follow"> <!-- Indicaciones para los motores de búsqueda -->
+        <meta name="theme-color" content="#6a1db8"> <!-- Color temático de la página -->
+
+        <link rel="icon" href="img/yo.jpg" type="image/x-icon"> <!-- Icono de la página -->
+
+        <meta name="description" content="Portafolio de Jensy Morales @Yedom, Desarrollador FullStack especializado en Backend, de la carrera de Ingeniería en Sistemas de la Universidad catolica del Cibao."> <!-- Descripción de la página para motores de búsqueda (suele aparecer debajo del título en los resultados de búsqueda) -->
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img/yo.jpg">
+        <meta property="og:description" content="Portafolio de Jensy Morales @Yedom, Desarrollador FullStack especializado en Backend, de la carrera de Ingeniería en Sistemas de la Universidad catolica del Cibao.">
+        <meta property="og:title" content="Portafolio de Jensy Morales @Yedom">
+        <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilos CSS -->
+    </head>
+    <body>
+        <header>
+            <h1>Portafolio de Jensy Morales @Yedom</h1>
+            
+        </header>
+        <nav class="navbar">
+                <a class="link" href="#Experiencia">Experiencia</a>
+                <a class="link"  href="#Proyectos">Proyectos Realizados</a>
+                <a class="link"
+                    href="https://github.com/JensyMoralesYedom"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Mi GitHub</a>
+            </nav>
+        <main>
+            <section class="presentacion">
+                <img 
+                id="Imagen-Yo"
+                title="Una Imagen de Jensy Morales mirando a la camara sonriendo"
+                height="300"
+                width="300"
+                src="img/yo.jpg" 
+                alt="Una Imagen de Jensy Morales mirando a la camara sonriendo"
+                >
+                <div class="">
+                    <h2>Bienvenido a mi portafolio</h2>
+                <p>Hola, soy Jensy Morales @Yedom, un desarrollador FullStack especializado en Backend. Actualmente estoy cursando la carrera de Ingeniería en Sistemas en la Universidad Católica del Cibao. Me apasiona crear soluciones innovadoras y eficientes a través del desarrollo web y la programación.</p>
+                </div>
+                
+
+            </section>
+
+            <p>Desarrollador FullStack especializado en Backend, de la carrera de <strong>Ingeniería en Sistemas</strong> de la Universidad catolica del Cibao.</p>
+
+            <dialog id="dialogo">
+                <p>Hola, soy Jensy Morales @Yedom, un desarrollador FullStack especializado en Backend. Actualmente estoy cursando la carrera de Ingeniería en Sistemas en la Universidad Católica del Cibao. Me apasiona crear soluciones innovadoras y eficientes a través del desarrollo web y la programación.</p>
+                <button id="cerrar">Cerrar</button>
+            </dialog>
+            <button id="mostrar">Mostrar mas información</button>
+
+            <script>
+                window.mostrar.addEventListener("click", function() {
+                    
+                    window.dialogo.showModal();
+                });
+                window.cerrar.addEventListener("click", function() {
+                    window.dialogo.close();
+                });
+            </script>
+            <h2>Experiencia</h2>
+
+            <ul class="list-experiencia">
+                <li class="list-group-item">
+                    <h3>Aguatracker</h3>
+                    <p class="exp-descripcion">Aplicación web para el control de la calidad del agua, con un sistema de autenticación y autorización, y un sistema de notificaciones en tiempo real.</p>
+                </li>
+                <li class="list-group-item">
+                    <h3>Libros Api</h3>
+                    <p class="exp-descripcion">API REST para la gestión de libros, con endpoints para crear, leer, actualizar y eliminar libros y autores.</p>
+                </li>
+                <li class="list-group-item">
+                    <h3>SGVE</h3>
+                    <p class="exp-descripcion"  >Aplicación de escritorio para la gestión de ventas y servicios generales, con un sistema de autenticación y autorización.</p>
+                </li>
+                <li class="list-group-item">
+                    <h3>Asitente de soporte TI en CoraaVega</h3>
+                    <p class="exp-descripcion">Brindo soporte técnico a los usuarios de la empresa, resolviendo problemas relacionados con el hardware y software.</p>
+                </li>
+            </ul>
+
+            
+
+            <h2 id="Proyectos">Proyectos Realizados</h2>
+
+            <aside>
+                <header>
+                    <h3>Mis tecnologias Favoritas</h3>
+                </header>
+                <ol>
+                    <li>C#</li>
+                    <li>Entity Framework</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                </ol>
+            </aside>
+
+            <section id="Preguntas-Frecuentes">
+                <article>
+                    <header>
+                        <h3>Aguatracker</h3>
+                    </header>
+                    <p>Aplicación web para el control de la calidad del agua, con un sistema de autenticación y autorización, y un sistema de notificaciones en tiempo real.</p>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Libros Api</h3>
+                    </header>
+                    <p>API REST para la gestión de libros, con endpoints para crear, leer, actualizar y eliminar libros y autores.</p>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>SGVE</h3>
+                    </header>
+                    <p>Aplicación de escritorio para la gestión de ventas y servicios generales, con un sistema de autenticación y autorización.</p>
+                </article>
+            </section>
+            
+            <section id="Preguntas-Frecuentes">
+                <h2>Preguntas Frecuentes</h2>
+                <details>
+                        <summary>¿Cuál es tu experiencia en desarrollo web?</summary>
+                        <p>Tengo experiencia en desarrollo web con tecnologías como HTML, CSS, JavaScript, Node.js, React y C#.</p>
+                    </details>  
+
+                    <details>
+                        <summary>¿Qué proyectos has realizado?</summary>
+                        <p>He realizado proyectos como Aguatracker, Libros Api y SGVE.</p>  
+                    </details>
+            </section>
+            <h2>Contacto</h2>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Información Personal</legend>
+
+                        <label style="display: block;">Nombre:
+                            <input 
+                            type="text" id="nombre" name="nombre" 
+                            required
+                            placeholder="Juan Perez">
+                        </label>
+                        
+
+                        <label for="email">Correo electrónico:</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                        placeholder="tucorreo@example.com"
+                        >
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Información Adicional</legend>
+
+                        <label for="telefono">Telefono:</label>
+                        <input 
+                        type="tel" 
+                        id="telefono" 
+                        name="telefono" 
+                        required
+                        placeholder="123-456-7890"
+                        >
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Asunto</legend>
+
+                        <label for="asunto">Asunto:</label>
+                        <select 
+                            id="asunto" 
+                            name="asunto" 
+                            required
+                        >
+                            
+                            <option value="consulta">Consulta</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="reclamo">Reclamo</option>
+                        </select>   
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mensaje</legend>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        required
+                        placeholder="Escribe tu mensaje aquí..."
+                        ></textarea>
+
+                    <input type="submit" value="Enviar Contacto">
+                    
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Jensy Morales @Yedom</p>
+        </footer>
+    </body>
+</html>
