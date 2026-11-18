@@ -101,12 +101,12 @@ header{
     gap: 10px;
     margin-top: 10px;
     grid-area: tecnologias;
-    background-color: #311616;
+    background-color: #1b0a0a;
 }
 
 .lista-proyectos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     
     grid-area: proyectos;
 }
@@ -117,8 +117,8 @@ header{
 .area-proyectos{
     display: grid;
     grid-template-areas: 
-        "proyectos proyectos tecnologias
-        preguntas preguntas tecnologias";
+        "proyectos proyectos tecnologias";
+    gap: 20px;
 }
 
 .proyecto{
@@ -127,5 +127,31 @@ header{
     box-sizing: border-box;
     height: 200px;
     width: 100%;
+    text-align: center;
 }
 
+#Preguntas-Frecuentes{
+    background-color: #311616;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #fcbf09;
+}
+#Preguntas-Frecuentes h2{
+    color: #fcbf09;
+    margin-bottom: 10px;
+}
+
+#Preguntas-Frecuentes summary{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #681414;
+    border-radius: 5px;
+    border: 1px solid #fcbf09;
+    margin-bottom: 5px;
+    color: #fcbf09;
+}
+
+#Preguntas-Frecuentes details[open] summary{
+    background-color: #FF0000;
+    color: #ecb309;
+}
