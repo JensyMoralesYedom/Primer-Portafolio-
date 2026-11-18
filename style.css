@@ -39,7 +39,7 @@ header{
 .navbar{
     position: sticky;
     top: 0;
-    background-color: #872121;
+    background-color: #681414;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ header{
     color: #fcbf09;
     border-radius: 5px;
     border: 2px solid #fcbf09;
-    min-height: 200px;
+    min-height: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -94,3 +94,38 @@ header{
 .exp-descripcion{
     max-width: 400px;
 }
+
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    grid-area: tecnologias;
+    background-color: #311616;
+}
+
+.lista-proyectos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+    grid-area: proyectos;
+}
+#Preguntas-Frecuentes{
+    grid-area: preguntas;
+}
+
+.area-proyectos{
+    display: grid;
+    grid-template-areas: 
+        "proyectos proyectos tecnologias
+        preguntas preguntas tecnologias";
+}
+
+.proyecto{
+    border: 2px solid #fcbf09;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+}
+

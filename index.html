@@ -18,6 +18,9 @@
         <meta property="og:image" content="img/yo.jpg">
         <meta property="og:description" content="Portafolio de Jensy Morales @Yedom, Desarrollador FullStack especializado en Backend, de la carrera de Ingeniería en Sistemas de la Universidad catolica del Cibao.">
         <meta property="og:title" content="Portafolio de Jensy Morales @Yedom">
+
+        <!-- Dependencias -->
+        <script src="https://kit.fontawesome.com/3554dd4125.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilos CSS -->
     </head>
     <body>
@@ -26,14 +29,16 @@
             
         </header>
         <nav class="navbar">
-                <a class="link" href="#Experiencia">Experiencia</a>
-                <a class="link"  href="#Proyectos">Proyectos Realizados</a>
+                <a class="link" href="#Experiencia"><span class="fas fa-briefcase"></span> Experiencia</a>
+                <a class="link"  href="#Proyectos"><span class="fas fa-folder"></span> Proyectos Realizados</a>
                 <a class="link"
                     href="https://github.com/JensyMoralesYedom"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Mi GitHub</a>
+                    <span class="fab fa-github"></span> Mi GitHub</a>
+                <a class="link" href="https://www.linkedin.com/in/jensy-enmanuel-morales-de-la-cruz-862259260/" target="_blank" rel="noreferrer">
+                    <span class="fab fa-linkedin"></span> Mi LinkedIn</a>
             </nav>
         <main>
             <section class="presentacion">
@@ -47,19 +52,19 @@
                 >
                 <div class="">
                     <h2>Bienvenido a mi portafolio</h2>
-                <p>Hola, soy Jensy Morales @Yedom, un desarrollador FullStack especializado en Backend. Actualmente estoy cursando la carrera de Ingeniería en Sistemas en la Universidad Católica del Cibao. Me apasiona crear soluciones innovadoras y eficientes a través del desarrollo web y la programación.</p>
+                <p>Hola, soy <strong>Jensy Morales @Yedom</strong>, un desarrollador FullStack especializado en Backend. Actualmente estoy cursando la carrera de Ingeniería en Sistemas en la Universidad Católica del Cibao. Me apasiona crear soluciones innovadoras y eficientes a través del desarrollo web y la programación.</p>
                 </div>
                 
 
             </section>
 
-            <p>Desarrollador FullStack especializado en Backend, de la carrera de <strong>Ingeniería en Sistemas</strong> de la Universidad catolica del Cibao.</p>
+            <p>C# · ASP.NET Core · SQL Server | APIs REST seguras y arquitectura en capas | Construyo sistemas para empresas en República Dominicana</p>
 
             <dialog id="dialogo">
-                <p>Hola, soy Jensy Morales @Yedom, un desarrollador FullStack especializado en Backend. Actualmente estoy cursando la carrera de Ingeniería en Sistemas en la Universidad Católica del Cibao. Me apasiona crear soluciones innovadoras y eficientes a través del desarrollo web y la programación.</p>
+                <p>Soy una persona apasionada por la tecnología y el desarrollo de software. Me gusta aprender nuevas tecnologías y aplicarlas en la resolución de problemas.</p>
                 <button id="cerrar">Cerrar</button>
             </dialog>
-            <button id="mostrar">Mostrar mas información</button>
+            <button id="mostrar">Sobre mí</button>
 
             <script>
                 window.mostrar.addEventListener("click", function() {
@@ -91,48 +96,47 @@
                 </li>
             </ul>
 
-            
 
             <h2 id="Proyectos">Proyectos Realizados</h2>
 
-            <aside>
-                <header>
-                    <h3>Mis tecnologias Favoritas</h3>
-                </header>
-                <ol>
-                    <li>C#</li>
-                    <li>Entity Framework</li>
-                    <li>MySQL</li>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                </ol>
-            </aside>
-
-            <section id="Preguntas-Frecuentes">
-                <article>
+            <div class="area-proyectos">
+                    <aside class="tecnologias">
                     <header>
-                        <h3>Aguatracker</h3>
+                        <h3>Mis tecnologias Favoritas</h3>
                     </header>
-                    <p>Aplicación web para el control de la calidad del agua, con un sistema de autenticación y autorización, y un sistema de notificaciones en tiempo real.</p>
-                </article>
+                    <ol>
+                        <li>C#</li>
+                        <li>Entity Framework</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                    </ol>
+                </aside>
 
-                <article>
-                    <header>
-                        <h3>Libros Api</h3>
-                    </header>
-                    <p>API REST para la gestión de libros, con endpoints para crear, leer, actualizar y eliminar libros y autores.</p>
-                </article>
+                <section class="lista-proyectos">
+                    <article class="proyecto">
+                        <header>
+                            <h3>Aguatracker</h3>
+                        </header>
+                        <p>Aplicación web para el control de la calidad del agua, con un sistema de autenticación y autorización, y un sistema de notificaciones en tiempo real.</p>
+                    </article>
 
-                <article>
-                    <header>
-                        <h3>SGVE</h3>
-                    </header>
-                    <p>Aplicación de escritorio para la gestión de ventas y servicios generales, con un sistema de autenticación y autorización.</p>
-                </article>
-            </section>
-            
-            <section id="Preguntas-Frecuentes">
+                    <article class="proyecto">
+                        <header>
+                            <h3>Libros Api</h3>
+                        </header>
+                        <p>API REST para la gestión de libros, con endpoints para crear, leer, actualizar y eliminar libros y autores.</p>
+                    </article>
+
+                    <article class="proyecto">
+                        <header>
+                            <h3>SGVE</h3>
+                        </header>
+                        <p>Aplicación de escritorio para la gestión de ventas y servicios generales, con un sistema de autenticación y autorización.</p>
+                    </article>
+                </section>
+                <section id="Preguntas-Frecuentes">
                 <h2>Preguntas Frecuentes</h2>
                 <details>
                         <summary>¿Cuál es tu experiencia en desarrollo web?</summary>
@@ -144,6 +148,11 @@
                         <p>He realizado proyectos como Aguatracker, Libros Api y SGVE.</p>  
                     </details>
             </section>
+            </div>
+            
+
+            
+            
             <h2>Contacto</h2>
             <section>
                 <form>
