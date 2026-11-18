@@ -1,8 +1,19 @@
 body{
     background-color: #110d0d;
-    color: #830000;
+    color: #b10808;
     font-family: courier, monospace;
     
+}
+body::before {
+    content: "";
+    position: fixed;          /* Mantiene el fondo fijo al hacer scroll */
+    inset: 0;                 /* Equivale a top: 0; right: 0; bottom: 0; left: 0; */
+    background-image: url('img/Fondo.jfif');
+    background-size: cover;   /* Ajusta la imagen a toda la pantalla sin deformarla */
+    background-position: center;
+    opacity: 0.02;            /* Ajusta entre 0.1 y 0.4 según qué tan sutil lo necesites */
+    z-index: -1;              /* Envía la textura detrás de todo el contenido */
+    pointer-events: none;     /* Evita que interfiera con los clics */
 }
 
 strong{
