@@ -1,6 +1,8 @@
 body{
     background-color: #110d0d;
     color: #830000;
+    font-family: courier, monospace;
+    
 }
 
 strong{
@@ -35,6 +37,7 @@ header{
     background-color: #311616;
     padding: 20px;
     text-align: center;
+    
 }
 .navbar{
     position: sticky;
@@ -52,7 +55,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    padding: 20px;
+    padding: 50px;
 }   
 
 .list-experiencia{
@@ -81,7 +84,7 @@ header{
     border-radius: 50%;
     margin: 20px;
     border: 2px solid #fcbf09;
-    width: 150px;
+    width: 300px;
     height: auto;
 }
 
@@ -103,6 +106,12 @@ header{
     grid-area: tecnologias;
     background-color: #1b0a0a;
 }
+.tecnologias header{
+    color: #fcbf09;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+}
 
 .lista-proyectos{
     display: grid;
@@ -110,9 +119,7 @@ header{
     
     grid-area: proyectos;
 }
-#Preguntas-Frecuentes{
-    grid-area: preguntas;
-}
+
 
 .area-proyectos{
     display: grid;
@@ -125,7 +132,7 @@ header{
     border: 2px solid #fcbf09;
     border-radius: 5px;
     box-sizing: border-box;
-    height: 200px;
+    
     width: 100%;
     text-align: center;
 }
@@ -135,6 +142,7 @@ header{
     padding: 20px;
     border-radius: 5px;
     border: 1px solid #fcbf09;
+    margin-top: 20px;
 }
 #Preguntas-Frecuentes h2{
     color: #fcbf09;
@@ -152,6 +160,6 @@ header{
 }
 
 #Preguntas-Frecuentes details[open] summary{
-    background-color: #FF0000;
+    background-color: #bf1616;
     color: #ecb309;
 }
